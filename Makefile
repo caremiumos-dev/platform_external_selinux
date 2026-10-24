@@ -29,3 +29,6 @@ distclean:
 	@for subdir in $(DISTCLEANSUBDIRS); do \
 		(cd $$subdir && $(MAKE) $@) || exit 1; \
 	done
+
+# Opt-in .deb packaging targets (make deb / deb-dev / deb-static).
+-include $(CURDIR)/deb.mk

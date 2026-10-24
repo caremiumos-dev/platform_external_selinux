@@ -25,3 +25,5 @@ cscope.*
 .*.swp
 # Failsafes
 !.gitignore
+/out-deb/
+/*.deb
